@@ -1,0 +1,86 @@
+[
+    {
+      "model": "vet_app.animal",
+      "pk": 1,
+      "fields": {
+        "name": "Buddy",
+        "species": "Dog",
+        "age": 5
+      }
+    },
+    {
+      "model": "vet_app.animal",
+      "pk": 2,
+      "fields": {
+        "name": "Mittens",
+        "species": "Cat",
+        "age": 3
+      }
+    },
+    {
+      "model": "vet_app.animal",
+      "pk": 3,
+      "fields": {
+        "name": "Tweety",
+        "species": "Bird",
+        "age": 2
+      }
+    },
+    {
+        "model": "vet_app.animal",
+        "pk": 4,
+        "fields": {
+          "name": "Fredo",
+          "species": "Dog",
+          "age": 4
+        }
+      },
+    {
+      "model": "vet_app.surgery",
+      "pk": 1,
+      "fields": {
+        "name": "Happy Paws Surgery Center",
+        "address": "1234 Pet St"
+      }
+    },
+    {
+      "model": "vet_app.surgery",
+      "pk": 2,
+      "fields": {
+        "name": "Furry Friends Animal Clinic",
+        "address": "5678 Fur Ave"
+      }
+    },
+    {
+      "model": "vet_app.vet",
+      "pk": 1,
+      "fields": {
+        "name": "Dr. Smith",
+        "years_experience": 10,
+        "animals": [1, 2],  
+        "surgery": 1        
+      }
+    },
+    {
+      "model": "vet_app.vet",
+      "pk": 2,
+      "fields": {
+        "name": "Dr. Johnson",
+        "years_experience": 5,
+        "animals": [2, 3],  
+        "surgery": 1        
+      }
+    },
+    {
+      "model": "vet_app.vet",
+      "pk": 3,
+      "fields": {
+        "name": "Dr. Brown",
+        "years_experience": 8,
+        "animals": [1],     
+        "surgery": 2        
+      }
+    }
+  ]
+  
+  

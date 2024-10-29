@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Q2</title>
+    </head>
+    <body>
+        <h1>Number of Vets in {{name}} </h1>
+
+        {% if error_message %}
+            <p style="color: red;">{{ error_message }}</p>
+        {% else %}
+            {% if num_vets is not None %}
+                <p>Number of Vets: {{ num_vets }}</p>
+            {% else %}
+                <p>Happy Paws Surgery Center not found or no vets available.</p>
+            {% endif %}
+        {% endif %}
+    </body>
+</html>

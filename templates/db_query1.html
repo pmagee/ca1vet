@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Q1</title>
+    </head>
+    <body>
+        <h1>Number Of Dogs</h1>
+
+        {% if error_message %}
+            <p style="color: red;">{{ error_message }}</p>
+        {% else %}
+            {% if num_dogs is not None %}
+                <p>Number of Dogs: {{ num_dogs }}</p>
+            {% else %}
+                <p>No dogs found available.</p>
+    {% endif %}
+        {% endif %}
+    </body>
+</html>
+

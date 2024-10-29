@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Detail</title>
+</head>
+<body>
+    <h1>Vet Details Page</h1>
+    <p>Name: {{ vet.name }}</p>
+    <p>Years Experience: {{ vet.years_experience }}</p>
+    <p>Surgery: {{ vet.surgery }}</p>
+    <p>Animals:</p>
+        <ul>
+        {% for a in vet.animals.all %}
+            <li>{{ a.name }}</li>
+        {% endfor %}
+        </ul>
+
+    <p><a href="{% url 'v_edit' vet.pk %}">+ Edit Vet Record</a></p>
+</body>
+</html>
